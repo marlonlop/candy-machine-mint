@@ -1,5 +1,6 @@
 body {
     background-color:#292a37;
+    color: white;
 }
 
 .connect-wl {
@@ -31,7 +32,7 @@ body {
   font-size: 1.5em;
 }
 .menu {
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 10%;
 }
 .btn-dark, .btn-dark:hover, .btn-dark:active, .btn-dark:visited {
@@ -47,15 +48,15 @@ body {
 hr {
   /* top: 50%; */
   margin-top: 4em;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
   border: 0;
   border-top: 8px solid #b3ce49;
 }
 
 @media (min-width: 768px) {  
-  #welcome-splash {
+  /* #welcome-splash {
     top: 65%;
-  }
+  } */
   .mobile-text {
     font-size:1.5em;
   }
@@ -146,15 +147,42 @@ b {
    margin-bottom: 2em;
  }
 
- #mint {
-  margin-top: 6em;
-  margin-bottom: 6em;
-}
-
 .splash-mint {
   color: #b3ce49;
   position: relative;
   font-size: 1.5em;
+}
+
+/* Mint */
+#mint {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.mint-text {
+  font-size: 0.9em;
+}
+/* .mint-card {
+  background-color: #292a37;
+  width: 20em;
+  margin-bottom: 3em;
+  margin-left: 0px;
+  padding-left: 0px;
+} */
+
+/* traits */
+/* .carousel-item {
+  transition: transform 2.6
+} */
+
+/* boolloons carousel */
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 1s 1s;
+}
+
+.traits {
+  margin-bottom: 2em;
 }
 
 /* FAQ */
