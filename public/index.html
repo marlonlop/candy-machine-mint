@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/custom.css">
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="The Hellish Party Fairgrounds" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +24,451 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <div><a href="https://twitter.com/HellishParty"><img class="icons-nav" src="%PUBLIC_URL%/media/twitter.svg" alt="Twitter"></a></div>
+    </li>
+    <li class="nav-item">
+      <div><a href="https://discord.gg/af3qhvdtRe"><img class="icons-nav" src="%PUBLIC_URL%/media/discord.svg" alt="Discord"></a></div>
+    </li>
+    <li class="nav-item">
+      <div><a href="#faq"><img class="icons-nav" src="%PUBLIC_URL%/media/faq.png" alt="Discord"></a></div>
+    </li>
+    <li class="nav-item">
+      <div class="connect-wl" id="root"></div>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li> -->
+  </ul>
+  <!-- Candy Machine Element -->
+  <div class="container row">
+    
+  </div>
+  <!-- End Candy Machine -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- intro -->
+  <div id="intro">
+    <div class="container welcome">
+      <div class="row logo">
+        <img class="mx-auto" src="%PUBLIC_URL%/media/hellishlogo.png" alt="logo">
+      </div>
+      <div class="row menu">
+        <div class="col-lg">
+          <a class="btn btn-dark btn-lg btn-block menu-item" href="#the-collection" role="button"><b>The Collection</b></a>
+        </div>
+        <div class="col-lg">
+          <a class="btn btn-dark btn-lg btn-block menu-item" href="#roadmap" role="button"><b>Roadmap</b></a>
+        </div>
+        <div class="col-lg">
+          <a class="btn btn-dark btn-lg  btn-block menu-item" href="#" role="button"><b>Traits</b></a>
+        </div>
+        <div class="col-lg">
+          <a class="btn btn-dark btn-lg btn-block menu-item" href="#mint" role="button"><b>Mint</b></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <!-- end intro -->
+
+  <div id="the-collection">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm mobile-text">
+          <h1 class="text-center">Hellish Party Boolloons</h1>
+          <p>
+            <br>
+            The Hellish Party is the one and only fair in the netherworld. The Boolloons are the first collection based
+            on
+            this hellish fair and they will consist of 4,666 Boolloon NFTs and 100 art concept pre-release Boolloon
+            NFTs. Each Boolloon
+            is an evil, grim, and unique character, no two are the same; some are rarer than others. There are several
+            traits that makes them unique.
+          </p>
+          <p>
+            These hellish Boolloons are created from hand made pieces of clay and they will grant you access to our
+            upcoming Hellish Party fair.
+          </p>
+        </div>
+        <div class="col-sm">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="%PUBLIC_URL%/media/73.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="%PUBLIC_URL%/media/66.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="%PUBLIC_URL%/media/4.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="%PUBLIC_URL%/media/50.png" alt="fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="%PUBLIC_URL%/media/44.png" alt="fifth slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <p class="mobile-text mint-announcement">
+            The mint date for the 4,4444 Hellish Party Boolloons is coming very soon.
+            The date will be announced here, Twitter and Discord. The mint fee will be 1 SOL
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="roadmap">
+    <h1>Roadmap</h1>
+    <div class="container border-rd mobile-text" id="roadmap">
+      <h3>0%</h3>
+      <p>
+      <ul>
+        <li>Launch the 100 concept art pre-release Boolloons; 70 will be available for purchase. <b><a
+              href="https://digitaleyes.market/collections/Hellish%20Party%20Boollons">Get it here!</a></b></li>
+        <li>30 Pre-release Boolloons will be given to our community members in various events. <b>In progress...</b>
+        </li>
+        <li>Mint release of the 4,666 Hellish Party Boolloons. <b>Coming soon...</b></li>
+        <li>The first 100 buyers of the main Hellish Party Boolloons will be airdrop a free SolUndead NFT</li>
+      </ul>
+      </p>
+      <br>
+      <h3 class="right">25%</h3>
+      <p class="right">
+      <ul class="right-lu">
+        <li>We will airdrop 3 Boolloons from the main Hellish Party Collection to random Boolloon holders</li>
+      </ul>
+      </p>
+      <br>
+      <h3>50%</h3>
+      <p>
+      <ul>
+        <li>We will airdrop 6 Boolloons from the main Hellish Party Collection to random Boolloon holders</li>
+      </ul>
+      </p>
+      <br>
+      <h3 class="right">75%</h3>
+      <p class="right">
+      <ul class="right-lu">
+        <li>A free Hellish Party NFT will be sent to each of the current pre-release Boolloon holders</li>
+      </ul>
+      </p>
+      <br>
+      <h3>100%</h3>
+      <p>
+      <ul>
+        <li>Four random holders of the main Hellish Party Boolloons collection will get a gift of $3,000 in Solana.</li>
+        <li>We will donate 5% of resale to a charity that helps fight Mental Health Illness.</li>
+        <li>2,333 out of 3333 SolUndead NFTs will be freed, and these will be given to random Boolloon holders (This is
+          a 50% chance to get a SolUndead). The
+          rest of SolUndead will remain locked in the netherworld and will be freed in future projects and community
+          giveaways.</li>
+        <li>We will begin working on a project for the Hellish Party fairgrounds that ties together with the Boolloons
+          and SolUndead.</li>
+      </ul>
+      <br>
+      <h3 class="rd-metaverse">What lies beyond?</h3>
+      <p class="rd-metaverse"> The Hellish Party Metaverse...</p>
+      </p>
+    </div>
+  </div>
+  <!-- Mint section -->
+  <div class="container text-center" id="mint">
+    <a class="btn btn-dark btn-lg splash-mint" href="put something here" role="button"><b>Mint Coming Soon...</b></a>
+  </div>
+  <!-- End mint section -->
+
+  <!-- The team -->
+  <div id="team">
+    <h1>The Team</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="card team-card mx-auto">
+            <img src="%PUBLIC_URL%/media/creator-1-noinfo.png" class="card-img-top" alt="Shadow">
+            <div class="card-body creator-body text-center mobile-text">
+              <h3 class="card-title">Shadow</h3>
+              <p class="card-text">Developer and manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card team-card mx-auto">
+            <img src="%PUBLIC_URL%/media/creator-2-noinfo.png" class="card-img-top" alt="DarkToken">
+            <div class="card-body creator-body text-center mobile-text">
+              <h3 class="card-title">DarkToken</h3>
+              <p class="card-text">Artist and manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card team-card mx-auto">
+            <img src="%PUBLIC_URL%/media/creator-3-noinfo.png" class="card-img-top" alt="Tuatara">
+            <div class="card-body creator-body text-center mobile-text">
+              <h3 class="card-title">Tuatara</h3>
+              <p class="card-text">Social media and writer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card team-card mx-auto">
+            <img src="%PUBLIC_URL%/media/creator-4-noinfo.png" class="card-img-top" alt="Pumpkin">
+            <div class="card-body creator-body text-center mobile-text">
+              <h3 class="card-title">Pumpkin</h3>
+              <p class="card-text">Social media and assistant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end team section -->
+  <!-- FAQ -->
+  <div id="faq">
+    <h1>FAQ</h1>
+    <div class="container mobile-text" id="faq">
+      <div class="accordion" id="questions">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                What is the total supply?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#questions">
+            <div class="card-body">
+              4,444 Boolloons for the main Hellish Party Boolloon collection and 100 pre-release Boolloons that are the
+              initial art concept.
+            </div>
+            <!-- <code>.show</code> class. "add this to make it visible by default" -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                When is launch day? How Much?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#questions">
+            <div class="card-body">
+              An announcement for the mint date is coming soon. (follow our social media channels to learn when a date
+              is announced).
+              <br><br>
+              Mint price for the main Hellish Party Boolloons collection will be 1 SOL.
+              <br><br>Pre-release Boolloons can be purchased for 1.5 SOL at <a
+                href="https://digitaleyes.market/collections/Hellish%20Party%20Boollons">DigitalEyes.market</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How can I buy a Boolloon?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              Boolloon purchases can be made through our website during the minting. Once sold out, they can be
+              purchased on secondary markets.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Is there a limit to how many Boolloons I can buy?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              No. However, there will be a limit to one NFT per transaction.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                Will you have an attribute and a rarity system?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              Yes, an attributes chart is posted in this website. However, we will not disclose the rarity percentage
+              until after the mint.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                How many traits are in the main Hellish party Boolloons collection?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+              default.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                Why wait until 75% sales to airprod a free NFT to pre-release holders?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              At 75% in the roadmap, current holders of pre-release Boolloons will receive a free NFT from the main
+              Hellish Party Boolloons Collection.
+              This is to maintain the floor price stable during the mint process. If we give them airdrop them at the
+              same time the mint starts,
+              someone could try to sell an NFT for a lower price than the mint fee just to make a quick buck from the
+              free Boolloon.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                Will you be listed on a secondary market?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              Yes, initially on <a
+                href="https://digitaleyes.market/collections/Hellish%20Party%20Boollons">DigitalEyes.market</a>, we will
+              work to verify the collection on other Solana marketplaces.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                Are there resale royalties?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              Yes, royalties are set at 5%.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                Do I own the Boolloon after purchasing it?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              Yes, you are the owner of the Boolloon, but we reserved the right to continue to use Boolloon images
+              to promote the project and help the continued growth of the Hellish Party fairgrounds.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                What are the SolUndead?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEleven" class="collapse" aria-labelledby="headingThree" data-parent="#questions">
+            <div class="card-body">
+              The SolUndead are the ones responsible for running the Hellish Party fairgrounds, they make sure
+              everything goes smoothly and the fun doesn’t stop.
+              <br><br>
+              There will be 3,3333 of them; 2,333 will be released and given to random Hellish Party Boolloon holders
+              (50% of Boolloon holders will get one).
+              The rest will be kept locked for future projects and community giveaways.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End FAQ -->
+
+  <!-- Footer  -->
+  <div class="container footer">
+    <footer class="text-center">
+      <a href="https://twitter.com/HellishParty"><img class="icons text-center" src="%PUBLIC_URL%/media/twitter.svg" alt="Twitter"></a>
+      <a href="https://discord.gg/af3qhvdtRe"><img class="icons text-center" src="%PUBLIC_URL%/media/discord.svg" alt="Discord"></a>
+      <div class="rights">
+        <p>all rights reserved 2021</p>
+      </div>
+    </footer>
+  </div>
+  <!-- Footer -->
+  <!-- Footer end -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
