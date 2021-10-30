@@ -6,6 +6,7 @@ body {
 .connect-wl {
   float: right;
   padding: 1.5em 1.5em 1.5em 1.5em;
+  display: none;
 }
 .icons-nav{
   width: 60px;
@@ -37,6 +38,17 @@ body {
 }
 .btn-dark, .btn-dark:hover, .btn-dark:active, .btn-dark:visited {
   background-color: #292a37 !important;
+}
+
+.pre-release {
+  text-decoration: underline;
+}
+.pre-release:hover {
+  color: white;
+}
+
+.intro-info {
+  align-content: center;
 }
 
 /* hellish party boolloons */
@@ -178,7 +190,7 @@ b {
 /* boolloons carousel */
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 1s 1s;
+  transition: opacity 0.5s 0.5s;
 }
 
 .traits {

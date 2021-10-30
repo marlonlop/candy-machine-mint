@@ -18,12 +18,12 @@ main {
   width: 250px;
   height: 493px;
   /* color: #292a37; */
-  
-
 }
+
 .mint-outer {
   margin-top: 0px;
 }
+
 .mint-inner {
   padding-top: 71%;
   padding-left: 22%;
@@ -33,26 +33,28 @@ main {
   text-align: left;
 }
 
-/* .mint-button {
-  color: #e6d11b;
+/* .MuiButton-contained { */
+  /* background-color: green; */
+  /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 7px 14px; */
+/* } */
+
+/* .mint-bt {
+  color:red;
 }
 
-.mint-button:disabled {
-  color: #eb122f;
+.mint-bt:disabled{
+  color: tomato;
 } */
 
-/* .button {
-  background: red;
-  border-radius: 8px;
-  color: white;
+/* .connect-wallet{
+  color: crimson;
 } */
-/* p {
-  margin: 3%;
-  padding-left: 19%;
-  font-size: .9em;
-  color: #292a37;
+
+/* .mint-button:disabled {
   font-weight: bold;
-  text-align: left;
+  font-size: 5em;
+  background-color: brown;
 } */
 
 code {

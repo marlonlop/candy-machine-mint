@@ -19,19 +19,27 @@ import {
   shortenAddress,
 } from "./candy-machine";
 
-const ConnectButton = styled(WalletDialogButton)``;
+const ConnectButton = styled(WalletDialogButton)`
+  /* &:hover{
+    color: white;
+    background-color: #292a37
+  }
+  background-color: #292a37;
+  color:#b3ce49;
+  font-weight: bold; */
+`;
 
 const CounterText = styled.span``; // add your styles here
 
-const MintContainer = styled.div``; // add your styles here
+const MintContainer = styled.div`
+  
+  /* color: red; 
+  font-size: 3em; */
+  `; // add your styles here
 
 const MintButton = styled(Button)`
-&:disabled {
-  cursor: not-allowed;
-  font-size: 1.2em;
-  color: red;
-  font-weight: bold;
-}
+  /* color: red; 
+  font-size: 3em; */
 `; // add your styles here
 
 export interface HomeProps {
@@ -182,18 +190,19 @@ const Home = (props: HomeProps) => {
 
           {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-          {wallet && <p>Total Available: {itemsAvailable}</p>}
+          {wallet && <p>Total Supply: {itemsAvailable}</p>}
 
-          {wallet && <p>Redeemed: {itemsRedeemed}</p>}
+          {wallet && <p>NFTs Sold: {itemsRedeemed}</p>}
 
-          {wallet && <p>Remaining: {itemsRemaining}</p>}
+          {wallet && <p>Available: {itemsRemaining}</p>}
         </div>
       </div>
-      <MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) : (
-          <div className="mint-button">
+      <div>
+        <MintContainer>
+          {!wallet ? (
+            <ConnectButton>Connect Wallet</ConnectButton>
+          ) : (
+
             <MintButton
               disabled={isSoldOut || isMinting || !isActive}
               onClick={onMint}
@@ -216,9 +225,10 @@ const Home = (props: HomeProps) => {
                 />
               )}
             </MintButton>
-          </div>
-        )}
-      </MintContainer>
+
+          )}
+        </MintContainer>
+      </div>
 
       <Snackbar
         open={alertState.open}
